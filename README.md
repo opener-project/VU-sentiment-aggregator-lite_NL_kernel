@@ -1,8 +1,7 @@
 VU-sentiment-aggregator-lite_NL
 ===============================
 
-sentiment-aggregator for Dutch Lite versionVU-polarity-tagger-lite_NL
-==========================
+Sentiment-aggregator for Dutch Lite versionVU-polarity-tagger-lite_NL
 
 This module implements a sentiment aggregator based on a set of predefined rules considering polarity
 shifters and intensifiers. The program reads from the
@@ -11,6 +10,7 @@ the program is:
 
 ````shell
 $ cat myfile.kaf | ./SentimentAggregatorLite.py > myfile.out.kaf
+````
 
 The input has to be a KAF valid file with at least the term layer including
 sentiment at the term level. The output will be a KAF file with the opinion
