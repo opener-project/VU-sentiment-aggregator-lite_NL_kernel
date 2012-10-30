@@ -67,7 +67,7 @@ class KafParser:
       self.tree.write(filename,encoding=myencoding,pretty_print=True,xml_declaration=True)
       
   
-  def addLinguisticProcessor(self,name,version, layer):
+  def addLinguisticProcessor(self,name,version, layer, time_stamp=True):
     ## Check if there is already element for the layer
     my_lp_ele = None
     
@@ -76,8 +76,11 @@ class KafParser:
         my_lp_ele = element
         break
       
+    if time_stamp:  
+      my_time = time.strftime('%Y-%m-%dT%H:%M:%S%Z')
+    else:
+      my_time = '*'
       
-    my_time = time.strftime('%Y-%m-%dT%H:%M:%S%Z')
     my_lp = etree.Element('lp')
     my_lp.set('timestamp',my_time)
     my_lp.set('version',version)

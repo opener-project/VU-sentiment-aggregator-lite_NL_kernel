@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 
 from lxml import etree
-import sys
+import sys,getopt
 from VUKafParserPy import KafParser
 
 
@@ -120,6 +120,15 @@ def createOpinion(kafObj, value):
     
 if __name__ == '__main__':
     
+    my_time_stamp = True
+    try:
+      opts, args = getopt.getopt(sys.argv[1:],"",["no-time"])
+      for opt, arg in opts:
+        if opt == "--no-time":
+          my_time_stamp = False
+    except getopt.GetoptError:
+      pass
+    
     kafObj = KafParser(sys.stdin)
     data_str = kafObj.getSentimentTriples()       
     data= convertPolarityToFloats(data_str)
@@ -129,7 +138,7 @@ if __name__ == '__main__':
     
     opinionObj = createOpinion(kafObj,total)
     kafObj.addLayer('opinions',opinionObj)
-    kafObj.addLinguisticProcessor('RuleBasedSentimentAnalyzer','1.0','opinion')
+    kafObj.addLinguisticProcessor('RuleBasedSentimentAnalyzer','1.0','opinion',time_stamp=my_time_stamp)
     kafObj.saveToFile(sys.stdout)
     
     

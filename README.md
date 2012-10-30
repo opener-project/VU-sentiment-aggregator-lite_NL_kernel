@@ -9,8 +9,12 @@ standard input and writes the output in the standard output. The most simple way
 the program is:
 
 ````shell
-$ cat myfile.kaf | ./SentimentAggregatorLite.py > myfile.out.kaf
+$ cat myfile.kaf | ./sentimentAggregatorLite.py > myfile.out.kaf
 ````
+
+Use the option --no-time if you want to exclude the timestamp information in the linguisticProccesors
+information (for testing purposes)
+
 
 The input has to be a KAF valid file with at least the term layer including
 sentiment at the term level. The output will be a KAF file with the opinion
