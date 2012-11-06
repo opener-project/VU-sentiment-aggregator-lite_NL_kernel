@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 
+
 from lxml import etree
 import sys,getopt
 from VUKafParserPy import KafParser
