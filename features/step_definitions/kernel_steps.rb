@@ -7,7 +7,7 @@ Given /^I put it through the kernel$/ do
   @tmp_filename = "output_#{rand(1000)}_#{@filename}"
   @output = tmp_file(@tmp_filename)
 
-  `cat #{@input} | ./SimpleTokenizer.py > #{@output}`
+  `cat #{@input} | ./SentimentAggregatorLite.py --no-time > #{@output}`
 end
 
 Then /^the output should match the fixture "(.*?)"$/ do |filename|

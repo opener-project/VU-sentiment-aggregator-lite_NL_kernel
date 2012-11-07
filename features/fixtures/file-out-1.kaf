@@ -8,7 +8,7 @@
     <lp timestamp="*" version="1.0" name="SimplePolarityTagger"/>
   </linguisticProcessors>
   <linguisticProcessor layer="opinion">
-    <lp timestamp="2012-11-07T14:47:47CET" version="1.0" name="RuleBasedSentimentAnalyzer"/>
+    <lp timestamp="*" version="1.0" name="RuleBasedSentimentAnalyzer"/>
   </linguisticProcessor>
   <text>
     <wf para="1" sent="1" wid="w_1">Heerlijk</wf>
