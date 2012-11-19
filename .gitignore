@@ -1,3 +1,13 @@
+<<<<<<< HEAD
+=======
+tmp/*
+.DS_Store
+.idea/
+pkg/
+Gemfile.lock
+*.swp
+
+>>>>>>> 67e39e80bb368853180888850ec9ee0c49c5127a
 *.py[co]
 
 # Packages

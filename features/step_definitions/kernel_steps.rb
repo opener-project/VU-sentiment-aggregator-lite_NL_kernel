@@ -7,7 +7,11 @@ Given /^I put it through the kernel$/ do
   @tmp_filename = "output_#{rand(1000)}_#{@filename}"
   @output = tmp_file(@tmp_filename)
 
+<<<<<<< HEAD
   `cat #{@input} | ./SentimentAggregatorLite.py --no-time > #{@output}`
+=======
+  `cat #{@input} | ./core/SentimentAggregatorLite.py --no-time > #{@output}`
+>>>>>>> 67e39e80bb368853180888850ec9ee0c49c5127a
 end
 
 Then /^the output should match the fixture "(.*?)"$/ do |filename|
