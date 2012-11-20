@@ -1,10 +1,7 @@
-<<<<<<< HEAD
-=======
 # Opener::Kernel::VU::Sentiment-Aggregator::lite::NL
 
 ## Initial Version
 
->>>>>>> 67e39e80bb368853180888850ec9ee0c49c5127a
 VU-sentiment-aggregator-lite_NL
 ===============================
 
@@ -16,11 +13,7 @@ standard input and writes the output in the standard output. The most simple way
 the program is:
 
 ````shell
-<<<<<<< HEAD
-$ cat myfile.kaf | ./sentimentAggregatorLite.py > myfile.out.kaf
-=======
 $ cat myfile.kaf | ./core/sentimentAggregatorLite.py > myfile.out.kaf
->>>>>>> 67e39e80bb368853180888850ec9ee0c49c5127a
 ````
 
 Use the option --no-time if you want to exclude the timestamp information in the linguisticProccesors
@@ -69,7 +62,6 @@ $ cat my_plain_text |
 ````
 
 Later on a tested "configuration" approach will be provided.
-<<<<<<< HEAD
 =======
 
 ## Installation
@@ -109,4 +101,3 @@ oof
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin features/my-new-feature`)
 5. If you're confident, merge your changes into master.
->>>>>>> 67e39e80bb368853180888850ec9ee0c49c5127a
