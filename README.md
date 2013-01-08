@@ -1,11 +1,11 @@
-# Opener::Kernel::VU::Sentiment-Aggregator::lite::NL
+# Opener::Kernel::VU::SentimentAggregator::Lite::NL
 
 ## Initial Version
 
-VU-sentiment-aggregator-lite_NL
-===============================
+VU-sentiment-aggregator-lite_NL_kernel
+======================================
 
-Sentiment-aggregator for Dutch Lite versionVU-polarity-tagger-lite_NL
+Sentiment-aggregator for Dutch Lite version
 
 This module implements a sentiment aggregator based on a set of predefined rules considering polarity
 shifters and intensifiers. The program reads from the
@@ -29,7 +29,7 @@ of the terms and with the application of a set of rules.
 Install the Requirements
 -----------------------
 
-The VU-sentiment-aggregator-lite_NL relies on some external dependencies. Which are described inthe requirement.txt file.
+The VU-sentiment-aggregator-lite_NL_kernel relies on some external dependencies. Which are described inthe requirement.txt file.
 An easy way to manage the dependencies, given that you use a unix/mac oriented machine, is to follow the installation of [virtualenv_burrito](https://github.com/brainsik/virtualenv-burrito).
 
 After you've installed virtualenv_burrito create a "virtual python environment" using
@@ -44,7 +44,7 @@ Now go to the directory of this repository and type
 pip install -r requirements.txt
 ````
 
-To install all the dependencies of the VU-sentiment-aggregator-lite_NL
+To install all the dependencies of the VU-sentiment-aggregator-lite_NL_kernel
 
 
 Combining things
@@ -68,7 +68,7 @@ Later on a tested "configuration" approach will be provided.
 
 Add this line to your application's Gemfile:
 
-    gem 'VU-sentiment-aggregator-lite_NL', :git=>"git@github.com/opener-project/VU-sentiment-aggregator-lite_NL.git"
+    gem 'VU-sentiment-aggregator-lite_NL_kernel', :git=>"git@github.com/opener-project/VU-sentiment-aggregator-lite_NL_kernel.git"
 
 And then execute:
 
@@ -76,7 +76,7 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install VU-sentiment-aggregator-lite_NL -l https://github.com/opener-project/VU-sentiment-aggregator-lite_NL.git
+    $ gem install VU-sentiment-aggregator-lite_NL_kernel -l https://github.com/opener-project/VU-sentiment-aggregator-lite_NL_kernel.git
 
 ## Usage
 
@@ -85,7 +85,7 @@ Once installed as a gem you can access the gem from anywhere:
 
 TODO: Change output below as needed
 ````shell
-echo "foo" | VU-sentiment-aggregator-lite_NL 
+echo "foo" | VU-sentiment-aggregator-lite_NL_kernel
 ````
 
 Will output
