@@ -543,7 +543,7 @@
     </term>
   </terms>
   <opinions>
-    <opinion>
+    <opinion oid="o_1">
       <opinion_target>
         <span>
           <id>t_1</id>
